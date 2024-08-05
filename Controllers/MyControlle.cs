@@ -45,5 +45,20 @@ namespace MyWebApi.Controllers
 
             return Ok(new { message = "Item created", item = model });
         }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var myModel = _context.MyModels.Find(id);
+            if (myModel == null)
+            {
+                return NotFound();
+            }
+
+            _context.MyModels.Remove(myModel);
+            _context.SaveChanges();
+
+            return Ok(new { message = "Model deleted" });
+        }
     }
 }
