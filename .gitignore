@@ -1,0 +1,121 @@
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (Mono Auto Generated)
+mono_crash.*
+
+# Mono auto generated files
+mono_crash.*
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Uncomment if you have tasks that create the project's static files in wwwroot
+#wwwroot/
+
+# Visual Studio Code and Rider specific files
+.vscode/
+.idea/
+
+# Rider
+.idea/
+*.sln.iml
+
+# Rider and Resharper settings directories
+.vs/
+_ReSharper.Caches/
+*.sln.DotSettings.user
+*.DotSettings.user
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Files built by Visual Studio or msbuild
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# MSTest test Results
+TestResults/
+TestResults/**/*.trx
+TestResults/**/*.coverlet.json
+TestResults/**/*.coverage
+TestResults/**/*.coveragexml
+
+# StyleCop
+StyleCopReport.xml
+*.cache
+
+# Client side dependencies
+node_modules/
+
+# User-defined or other imported files not to be included in source control
+*.dotCover
+*.editorconfig
+*.config
+*.licx
+*.lic
+*.csproj.user
+
+# Database
+*.mdf
+*.ldf
+*.sqlite
+*.sqlite3
+
+# Azure DevOps
+.vsts-ci.yml
+.pipeline/
+
+# Environment variables
+.env
+
+# Local History for JetBrains IDEs
+.idea/.idea
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code settings folder
+.vscode/
+.history/
+
+# Rider's settings folder
+.idea/
+
+# Uncomment if you have NuGet cache globally
+# NuGet Packages
+packages/
+!packages/*/
+!.nuget/packages/
+
+# NuGet v3's project.json files produces more temporary files than NuGet v2
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Uncomment if you have Node.js dependencies
+# npm package folder
+node_modules/
