@@ -1,11 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 using DotNetEnv;
+using MyWebApi.Models;
 
 namespace MyWebApi
 {
     public class AppDbContext : DbContext
     {
         public DbSet<MyModel> MyModels { get; set; }
+        public DbSet<Classroom> Classrooms { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
