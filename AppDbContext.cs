@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using DotNetEnv;
 
 namespace MyWebApi
 {
@@ -8,7 +9,18 @@ namespace MyWebApi
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql("server=localhost;database=cs38_db;user=cs38;password=cs38",
+
+            // Load environment variables from .env file
+            Env.Load();
+            
+            var server = Environment.GetEnvironmentVariable("DB_SERVER");
+            var database = Environment.GetEnvironmentVariable("DB_DATABASE");
+            var user = Environment.GetEnvironmentVariable("DB_USER");
+            var password = Environment.GetEnvironmentVariable("DB_PASSWORD");
+
+            var connectionString = $"server={server};database={database};user={user};password={password}";
+
+            optionsBuilder.UseMySql(connectionString,
                 new MySqlServerVersion(new Version(8, 0, 28)));
         }
     }
